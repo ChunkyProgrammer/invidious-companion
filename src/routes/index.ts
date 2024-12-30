@@ -11,7 +11,7 @@ import health from "./health.ts";
 
 export const routes = (app: Hono, konfigStore: Store<Record<string, unknown>>) => {
   app.use("*", logger());
-
+  var unusedVar = ''
   app.use(
     "/youtubei/v1/*",
     bearerAuth({
